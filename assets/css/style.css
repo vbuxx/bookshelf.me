@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --mainColor: #1b263b;
+    --cream: #f4eee8;
+}
+
+header {
+    font-family: 'Exo 2',
+        sans-serif;
+}
+
+.navbar {
+    background-color: var(--mainColor);
+}
+
+main {
+    width: 100%;
+    margin: 30px 100px;
+}
+
+
+
+/* SEARCH SECTION */
+
+.left,
+.right {
+    padding: 0 !important;
+}
+
+.left {
+    padding-right: 10px !important;
+}
+
+.btn {
+    color: var(--cream);
+    background: var(--mainColor);
+    border: solid 2px transparent;
+}
+
+.btn-outline-secondary {
+    /* /* width: 70px; */
+    /* height: auto !important; */
+    margin-top: 0 !important;
+    font-size: 1rem;
+}
+
+.btn:hover,
+.btn:focus {
+    color: var(--mainColor);
+    background: white;
+    border: solid 2px var(--mainColor);
+}
+
+
+/* FORM STYLING */
+.form-control {
+    height: 65px;
+    font-size: larger;
+
+}
+
+.checkbox {
+    font-size: 4rem !important;
+}
+
+/* accordion finished-unfinished section*/
+.accordion-button {
+    background-color: white !important;
+}
+
+.accordion-button>h2 {
+    color: var(--mainColor) !important;
+}
+
+.author,
+.year {
+    font-size: large;
+}
+
+.button-finish,
+.button-unfinish {
+    background-color: rgb(2, 171, 53);
+}
+
+
+.button-delete {
+    background-color: rgba(234, 12, 12, 0.724);
+}
+
+/* sweetalert */
+.cancel-btn,
+.remove-btn {
+    margin: 0 5px !important;
+}
+
+.cancel-btn {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--mainColor);
+}
+
+.remove-btn {
+    background-color: rgba(234, 12, 12, 0.724);
+}
+
+
+/* #### MEDIA QUERIES #### */
+
+@media screen and (max-width: 2500px) {
+    .navbar-brand {
+        padding: 0% !important;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        margin: 20px 10%;
+    }
+
+    #searchSubmit {
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (max-width: 570px) {
+    .navbar-brand {
+        padding: 0% !important;
+    }
+
+    .book-action {
+        justify-content: flex-start !important;
+    }
+
+    .button-delete {
+        margin-left: 5px;
+    }
+
+    #searchSubmit {
+        margin-top: 10px;
+    }
+}
